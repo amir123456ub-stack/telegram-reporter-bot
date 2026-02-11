@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: telegram-reporter-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    envVars:
+      - key: API_ID
+        value: 30916028
+      - key: API_HASH
+        value: 783b3478b8ccc2add2933b0966da7f1e
+      - key: BOT_TOKEN
+        value: 8474837931:AAFuc3YdywPBWn4wT9w9ej1qZULL46Uic-0
+      - key: ADMIN_IDS
+        value: 7410986857
+      - key: ENCRYPTION_KEY
+        generateValue: true

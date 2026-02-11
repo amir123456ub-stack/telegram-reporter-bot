@@ -1,0 +1,12 @@
+2026-02-11 23:05:48 - init_db - INFO - Logger 'init_db' initialized with level INFO
+2026-02-11 23:06:21,925 - config_manager - INFO - Configuration validation completed
+2026-02-11 23:06:22,018 - database - INFO - Database tables created/verified
+2026-02-11 23:06:22,019 - database - INFO - Database initialized at bot_database.db
+2026-02-11 23:40:22 - init_db - INFO - Logger 'init_db' initialized with level INFO
+2026-02-11 23:41:11,212 - config_manager - INFO - Configuration validation completed
+2026-02-11 23:41:11,334 - database - INFO - Database tables created/verified
+2026-02-11 23:41:11,337 - database - INFO - Database initialized at bot_database.db
+2026-02-11 23:42:26,524 - config_manager - INFO - Configuration validation completed
+2026-02-11 23:42:26,643 - database - INFO - Database tables created/verified
+2026-02-11 23:42:26,645 - database - INFO - Database initialized at bot_database.db
+2026-02-11 23:42:26,976 - __main__ - ERROR - Bot crashed: 
