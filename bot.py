@@ -96,10 +96,15 @@ class TelegramReporterBot:
         self._init_database()
         
     def _init_database(self):
-        """Initialize database tables"""
-        async def init():
-            await self.db.init_tables()
-        asyncio.run(init())
+    try:
+        # چک کن event loop باز هست یا نه
+        loop = asyncio.get_running_loop()
+    except RuntimeError:
+        # loop بسته است - یه loop جدید بساز
+        asyncio.run(self.db.init_tables())
+    else:
+        # loop باز است - از create_task استفاده کن
+        loop.create_task(self.db.init_tables())
     
     async def start_bot(self):
         """Start the bot"""
